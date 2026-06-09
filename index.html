@@ -115,25 +115,18 @@
     <footer>
         <a href="https://connect.awr.org" target="_blank" rel="noopener noreferrer">Learn more at https://connect.awr.org</a>
     </footer>
-        <!-- AWR Connect WebChat Widget -->
-        <script src="https://webchat.rel.connect.awr.org/widgets/awr-connect-plugin.js" defer></script>
-            <script>
-                globalThis.addEventListener('load', function() {
-                    var awr = globalThis.awrConnect;
-                    if (awr && typeof awr.setup === 'function') {
-                        awr.setup({
-                            webChatId: 'c71c7ade-77a4-4c9f-8d19-c224ca778122',
-                            color: '#007bff',
-                            headerTitle: 'Chat with us',
-                            showChannelSelector: true,
-                            type: 'floating',
-                            autoOpen: false,
-                            minimized: true
-                        });
-                    } else {
-                        console.warn('AWR Connect script not loaded yet.');
-                    }
-                });
-            </script>
+        <!-- Adventist Inbox WebChat Widget -->
+        <script src="https://webchat.connect.awr.org/widgets/awr-connect-plugin.js"></script>
+        <script>
+          awrConnect.setup({
+            webChatId: "a750f9b8-0439-4d99-81e5-927128de0025",
+            color: "#007bff",
+            headerTitle: "Chat with us",
+            showChannelSelector: true,
+            type: "floating",
+            autoOpen: false,
+            minimized: true
+          });
+        </script>
 </body>
 </html>
